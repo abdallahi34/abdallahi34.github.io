@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POST TITLE — Abdellahi Ahmed Zerough</title>
+<meta name="description" content="One-sentence summary of this write-up for search/link previews.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand"><a href="../index.html" style="color:inherit;text-decoration:none;">Abdellahi<span>.</span>sec</a></div>
+    <nav class="links">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#writeups">Write-ups</a>
+      <a href="../index.html#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="post-header">
+  <div class="wrap">
+    <a class="back-link" href="../index.html#writeups">&larr; Back to write-ups</a>
+    <div class="meta-row">MACHINE / CATEGORY &middot; DATE PUBLISHED</div>
+    <h1>POST TITLE GOES HERE</h1>
+    <div class="tags">
+      <span class="tag">tag-one</span>
+      <span class="tag teal">tag-two</span>
+      <span class="tag amber">cve-xxxx-xxxxx</span>
+    </div>
+  </div>
+</div>
+
+<div class="post-body">
+
+  <!--
+    A short callout up top is a good place to state anything readers should know before
+    diving in: that the machine is retired, that data is synthetic/redacted, etc.
+  -->
+  <div class="callout"><strong>Note:</strong> Replace this with any disclosure the reader needs (e.g. "this machine is retired on HTB" or "IPs and hostnames redacted").</div>
+
+  <p>
+    Opening paragraph: what this write-up covers, what was exploited, and why it's interesting
+    — the summary someone skimming would read before deciding to continue.
+  </p>
+
+  <h2>Enumeration</h2>
+  <p>Describe what you found and how.</p>
+  <pre><code>nmap -sC -sV -oN nmap.txt target.htb</code></pre>
+
+  <h2>Exploitation</h2>
+  <p>Walk through the exploit step by step. Use <code>inline code</code> for commands/paths and
+  fenced blocks for longer output.</p>
+  <pre><code># command and output go here
+</code></pre>
+
+  <h2>Root Cause</h2>
+  <p>Explain <em>why</em> it worked, not just that it worked. This is the section that
+  actually demonstrates understanding.</p>
+
+  <table>
+    <tr><th>Attempt</th><th>Result</th><th>Reason</th></tr>
+    <tr><td>example</td><td>Blocked / Worked</td><td>why</td></tr>
+  </table>
+
+  <h2>Lessons / Detection</h2>
+  <p>How would this be detected or prevented? This is the section that shows you're thinking
+  like a defender, not just an attacker — worth including in every write-up.</p>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 Abdellahi Ahmed Zerough.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdellahi Ahmed Zerough — Cybersecurity Engineer</title>
+<meta name="description" content="SOC / Blue Team / Cloud Security — projects and write-ups by Abdellahi Ahmed Zerough">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">Abdellahi<span>.</span>sec</div>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#writeups">Write-ups</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="accent-bar"></div>
+    <h1>Abdellahi Ahmed Zerough</h1>
+    <p class="tagline">Cybersecurity Engineer — SOC, Blue Team, and cloud security detection engineering. I build and break things to understand how they actually fail.</p>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/abdellahi-ahmed-zerough/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/abdallahi34" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://app.hackthebox.com/users/abdellahi24" target="_blank" rel="noopener">Hack The Box</a>
+      <a href="mailto:abdallahizerough@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+
+      <a class="card" href="https://github.com/abdallahi34/cloudguard" target="_blank" rel="noopener" style="text-decoration:none;">
+        <div class="meta">Cloud Security · Detection Engineering</div>
+        <h3>CloudGuard</h3>
+        <p>A four-layer cloud security pipeline: Checkov static analysis gated in CI, a boto3-based posture scanner mapped to MITRE ATT&amp;CK, Sigma detection rules evaluated with pySigma over labeled CloudTrail-style events, and dry-run-first remediation with a full audit log. Tested against a mocked AWS environment.</p>
+        <div class="tags">
+          <span class="tag">Terraform</span>
+          <span class="tag teal">Checkov</span>
+          <span class="tag amber">boto3 / Moto</span>
+          <span class="tag purple">pySigma</span>
+        </div>
+        <div class="go">View repository →</div>
+      </a>
+
+      <div class="card">
+        <div class="meta">Coming soon</div>
+        <h3>More projects in progress</h3>
+        <p>This space fills up as new work ships — check back or follow on LinkedIn/GitHub for updates.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="writeups" class="alt">
+  <div class="wrap">
+    <h2 class="section-title">Write-ups</h2>
+    <div class="grid">
+
+      <!--
+        Add a new write-up card here for each post you publish, and create the matching
+        file in /writeups/. Copy writeups/_template.html as a starting point for the post
+        itself — see README.md for the full instructions.
+      -->
+
+      <div class="card">
+        <div class="meta">Coming soon</div>
+        <h3>First write-up in progress</h3>
+        <p>Machine and CTF write-ups will appear here once published. Each one links to a full breakdown with methodology, root cause, and lessons learned.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title">About</h2>
+    <p style="color:#c7d1ea;max-width:680px;font-size:15.5px;">
+      I'm an Engineer's Degree candidate in Information Systems Security at ENSIAS (Rabat), with hands-on SOC and
+      penetration testing experience, including an end-of-studies internship deploying and evaluating an open-source
+      NDR solution in a live SOC. My focus areas are incident detection and response, MITRE ATT&amp;CK-driven detection
+      engineering, and cloud security. Full background on
+      <a href="https://www.linkedin.com/in/abdellahi-ahmed-zerough/" target="_blank" rel="noopener">LinkedIn</a>.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 Abdellahi Ahmed Zerough. Built as a static site, hosted on GitHub Pages.</div>
+  </div>
+</footer>
+
+</body>
+</html>
