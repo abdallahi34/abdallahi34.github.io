@@ -6,6 +6,8 @@ order: 5
 
 I'm Abdellahi Ahmed Zerough, a Cybersecurity Engineer focused on SOC, Blue Team, and cloud security — graduate of ENSIAS, holding two completed engineering degrees (Information Systems Security; Computer Science, Networks and Telecommunications).
 
+[LinkedIn](https://www.linkedin.com/in/abdellahi-ahmed-zerough/) &middot; [GitHub](https://github.com/abdallahi34) &middot; [Hack The Box profile](https://app.hackthebox.com/) &middot; [Email](mailto:abdallahizerough@gmail.com)
+
 ## Experience
 
 - **CBI, Casablanca** — NDR deployment and threat detection inside a live SOC: reproducible MITRE ATT&CK attack scenarios, custom detection rules for DNS tunneling.
@@ -26,5 +28,5 @@ Microsoft Applied Skills: Administering Active Directory Domain Services · Hack
 
 Write-ups and walkthroughs — HackTheBox and TryHackMe machines, CTF challenges, and notes on detection engineering and cloud security. I write these to actually understand what I built or broke, not just to log an answer.
 
-> **Get in touch:** links to my profiles are in the sidebar, or open an issue in this repository.
+> **Get in touch:** links above, also in the sidebar, or open an issue in this repository.
 > {: .prompt-tip }

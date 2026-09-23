@@ -11,51 +11,51 @@ A few things I've built, mostly around detection engineering and cloud security.
 <div class="row row-cols-1 row-cols-md-2 g-3 mt-1">
 
 <div class="col">
-  <a href="/projects/cloudguard/" class="text-decoration-none">
-    <div class="card h-100 shadow-sm">
-      <img src="/images/projects/cloudguard.png" class="card-img-top" alt="CloudGuard">
-      <div class="card-body">
-        <h5 class="card-title">CloudGuard</h5>
-        <p class="card-text text-muted">Cloud security detection pipeline — IaC scanning, posture monitoring, CloudTrail detection, remediation.</p>
-      </div>
+  <div class="card h-100 shadow-sm">
+    <a href="/projects/cloudguard/"><img src="/images/projects/cloudguard.png" class="card-img-top" alt="CloudGuard"></a>
+    <div class="card-body">
+      <h5 class="card-title"><a href="/projects/cloudguard/" class="text-decoration-none">CloudGuard</a></h5>
+      <p class="card-text text-muted">Cloud security detection pipeline — IaC scanning, posture monitoring, CloudTrail detection, remediation.</p>
+      <a href="/projects/cloudguard/">Read more</a> &middot;
+      <a href="https://github.com/abdallahi34/cloudguard" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     </div>
-  </a>
+  </div>
 </div>
 
 <div class="col">
-  <a href="/projects/intelligent-ids-sdn/" class="text-decoration-none">
-    <div class="card h-100 shadow-sm">
-      <img src="/images/projects/ids-sdn.png" class="card-img-top" alt="Intelligent IDS for SDN Networks">
-      <div class="card-body">
-        <h5 class="card-title">Intelligent IDS for SDN Networks</h5>
-        <p class="card-text text-muted">Real-time intrusion detection integrated into a Ryu SDN control loop with ML inference.</p>
-      </div>
+  <div class="card h-100 shadow-sm">
+    <a href="/projects/intelligent-ids-sdn/"><img src="/images/projects/ids-sdn.png" class="card-img-top" alt="Intelligent IDS for SDN Networks"></a>
+    <div class="card-body">
+      <h5 class="card-title"><a href="/projects/intelligent-ids-sdn/" class="text-decoration-none">Intelligent IDS for SDN Networks</a></h5>
+      <p class="card-text text-muted">Real-time intrusion detection integrated into a Ryu SDN control loop with ML inference.</p>
+      <a href="/projects/intelligent-ids-sdn/">Read more</a> &middot;
+      <a href="https://github.com/abdallahi34/intelligent-ids-sdn" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     </div>
-  </a>
+  </div>
 </div>
 
 <div class="col">
-  <a href="/projects/wazuh-siem-lab/" class="text-decoration-none">
-    <div class="card h-100 shadow-sm">
-      <img src="/images/projects/wazuh-siem-lab.png" class="card-img-top" alt="SIEM/XDR Lab with Wazuh">
-      <div class="card-body">
-        <h5 class="card-title">SIEM/XDR Lab with Wazuh</h5>
-        <p class="card-text text-muted">Full Wazuh deployment with FIM, 9 custom detection rules, and automated active response.</p>
-      </div>
+  <div class="card h-100 shadow-sm">
+    <a href="/projects/wazuh-siem-lab/"><img src="/images/projects/wazuh-siem-lab.png" class="card-img-top" alt="SIEM/XDR Lab with Wazuh"></a>
+    <div class="card-body">
+      <h5 class="card-title"><a href="/projects/wazuh-siem-lab/" class="text-decoration-none">SIEM/XDR Lab with Wazuh</a></h5>
+      <p class="card-text text-muted">Full Wazuh deployment with FIM, 9 custom detection rules, and automated active response.</p>
+      <a href="/projects/wazuh-siem-lab/">Read more</a> &middot;
+      <a href="https://github.com/abdallahi34/wazuh-siem-lab" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     </div>
-  </a>
+  </div>
 </div>
 
 <div class="col">
-  <a href="/projects/zkp-auth/" class="text-decoration-none">
-    <div class="card h-100 shadow-sm">
-      <img src="/images/projects/zkp-auth.png" class="card-img-top" alt="Zero-Knowledge Proof Authentication">
-      <div class="card-body">
-        <h5 class="card-title">Zero-Knowledge Proof Authentication</h5>
-        <p class="card-text text-muted">Securing a smart IoT lock against relay/ARP-spoof attacks with a Schnorr ZKP protocol.</p>
-      </div>
+  <div class="card h-100 shadow-sm">
+    <a href="/projects/zkp-auth/"><img src="/images/projects/zkp-auth.png" class="card-img-top" alt="Zero-Knowledge Proof Authentication"></a>
+    <div class="card-body">
+      <h5 class="card-title"><a href="/projects/zkp-auth/" class="text-decoration-none">Zero-Knowledge Proof Authentication</a></h5>
+      <p class="card-text text-muted">Securing a smart IoT lock against relay/ARP-spoof attacks with a Schnorr ZKP protocol.</p>
+      <a href="/projects/zkp-auth/">Read more</a>
+      <span class="text-muted">&middot; team project, no public repo</span>
     </div>
-  </a>
+  </div>
 </div>
 
 </div>
