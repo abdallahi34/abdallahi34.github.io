@@ -1,30 +1,55 @@
 # abdallahi34.github.io
 
-Personal site: projects and write-ups. Plain static HTML/CSS, no build step, no Jekyll/Ruby dependency — GitHub Pages serves it as-is.
+Personal site and blog — write-ups (HackTheBox / TryHackMe), detection engineering notes, and security projects, including [CloudGuard](https://github.com/abdallahi34/cloudguard).
 
-## Publish it
+Built on the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) Jekyll theme.
 
-1. Push everything in this folder to the root of the `abdallahi34.github.io` repo (must be **public**).
-2. In the repo's **Settings → Pages**, set source to "Deploy from a branch" → `main` → `/ (root)`.
-3. Wait a couple of minutes, then it's live at `https://abdallahi34.github.io`.
+## Publishing
 
-## Add a new write-up
+This repo builds and deploys itself — no local Ruby/Jekyll install needed.
 
-1. Copy `writeups/_template.html` to `writeups/your-post-slug.html`.
-2. Fill in the title, date, tags, and body sections (marked with comments in the template).
-3. Add any screenshots to `assets/img/` and reference them with `<img src="../assets/img/yourfile.png">`.
-4. Add a matching card in `index.html` under the `<section id="writeups">` block — copy one of the existing `.card` blocks, point its link at `writeups/your-post-slug.html`.
-5. Commit and push. No build step, it's live as soon as GitHub Pages picks up the change.
+1. Push this repo's contents to the root of `abdallahi34.github.io` (it must be a **public** repo for free GitHub Pages).
+2. In the repo, go to **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
+3. Push to `main` — the workflow in `.github/workflows/pages-deploy.yml` builds the site and publishes it automatically.
+4. The site will be live at `https://abdallahi34.github.io`.
 
-## Add a new project
+## Writing a new post
 
-Same pattern under `<section id="projects">` in `index.html` — copy a `.card` block, point it at the repo URL.
+Create a file in `_posts/` named `YYYY-MM-DD-title.md` with front matter like:
 
-## Customizing the look
+```yaml
+---
+title: "Post Title"
+author: "abdallahi"
+date: YYYY-MM-DD HH:MM:00 +0000
+categories: [category]
+tags: [tag1, tag2]
+render_with_liquid: false
+---
+```
 
-All colors and spacing live in `assets/css/style.css` as CSS custom properties at the top of the file (`:root { --blue: ...; --teal: ...; }`). Change those and the whole site follows — no need to hunt through individual pages.
+For a machine write-up, copy `_templates/writeup-template.md` and fill it in — **only publish once the machine is confirmed retired**, per HackTheBox's rules on active machines.
 
-## Before publishing any write-up
+## Local preview (optional)
 
-- Confirm the machine is retired if it's an HTB box (HTB prohibits public write-ups of active machines).
-- Check screenshots for your hostname, local file paths, or anything else you don't want public, and crop/redact before adding them.
+If you want to preview changes locally before pushing:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open `http://127.0.0.1:4000`.
+
+## Structure
+
+- `_config.yml` — site settings (title, social links, theme mode)
+- `_tabs/` — top-level pages (About, Archives, Categories, Tags)
+- `_posts/` — blog posts and write-ups
+- `_templates/writeup-template.md` — starting point for a new machine write-up
+- `_data/` — author info, contact links, share options
+- `assets/img/` — avatar and favicons
+
+## Credits
+
+Theme by [Cotes Chung](https://github.com/cotes2020) — [jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), MIT licensed (see `LICENSE`).
