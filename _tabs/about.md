@@ -1,18 +1,26 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
-I'm Abdellahi Ahmed Zerough, a Cybersecurity Engineer focused on SOC, Blue Team, and cloud security.
+I'm Abdellahi Ahmed Zerough, a Cybersecurity Engineer focused on SOC, Blue Team, and cloud security — graduate of ENSIAS, holding two completed engineering degrees (Information Systems Security; Computer Science, Networks and Telecommunications).
 
-I'm currently completing an Engineer's Degree in Information Systems Security at ENSIAS (Rabat), with hands-on experience across incident detection and response, penetration testing, and network defense.
+## Experience
 
-## Background
+- **CBI, Casablanca** — NDR deployment and threat detection inside a live SOC: reproducible MITRE ATT&CK attack scenarios, custom detection rules for DNS tunneling.
+- **Valinnovo, Témara** — web application penetration testing (SQLi, auth bypass, brute force), automated against OWASP guidelines.
+- **Banque El Amana, Nouakchott** — secure REST APIs, RBAC, and a customer risk-scoring engine for a regulatory compliance system.
 
-- **NDR & threat detection (CBI, Casablanca)** — deployed and evaluated an open-source NDR solution inside a live SOC, designed reproducible MITRE ATT&CK-aligned attack scenarios, and built custom detection rules to close gaps in the default ruleset.
-- **Penetration testing (Valinnovo)** — web application testing (SQL injection, auth bypass, brute force), automated with Python against OWASP guidelines.
-- **Cloud security** — building [CloudGuard](https://github.com/abdallahi34/cloudguard), a cloud security detection pipeline covering IaC scanning, posture monitoring, and CloudTrail-based detection engineering mapped to MITRE ATT&CK.
+## What I work with
+
+SOC & detection engineering (Wazuh, ELK, Security Onion, Suricata, Zeek, MITRE ATT&CK) · cloud security (Terraform, Checkov, AWS, Sigma) · pentesting (Burp Suite, SQLMap, Metasploit)
+
+See [Projects](/projects/) for what I've built with these.
+
+## Certifications
+
+Microsoft Applied Skills: Administering Active Directory Domain Services · Hack The Box, Hacker (Level 33) · CCNA 1 & 2 · 1st Prize, ENSIAS CTF
 
 ## What's on this blog
 
