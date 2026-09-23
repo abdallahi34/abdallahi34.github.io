@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 6
 ---
 
 I'm Abdellahi Ahmed Zerough, a Cybersecurity Engineer focused on SOC, Blue Team, and cloud security — graduate of ENSIAS, holding two completed engineering degrees (Information Systems Security; Computer Science, Networks and Telecommunications).
