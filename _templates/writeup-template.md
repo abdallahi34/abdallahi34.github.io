@@ -17,12 +17,6 @@ render_with_liquid: false
 > This machine is retired — check the platform before publishing if you're duplicating this template for a new post.
 > {: .prompt-info }
 
-<div class="no-print text-end mb-3">
-  <button onclick="window.print()" class="btn btn-outline-secondary btn-sm">
-    <i class="fas fa-file-pdf"></i> Download as PDF
-  </button>
-</div>
-
 ## TL;DR
 One or two sentences: what was exploited, and the overall approach.
 
