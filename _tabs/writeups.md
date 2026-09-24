@@ -6,7 +6,7 @@ title: Writeups
 permalink: /writeups/
 ---
 
-Machine and CTF write-ups — published once the machine is retired or the event has ended.
+Machine and CTF write-ups , published once the machine is retired or the event has ended.
 
 {% assign writeups = site.posts | where_exp: "post", "post.categories contains 'writeup'" %}
 
@@ -42,5 +42,5 @@ Machine and CTF write-ups — published once the machine is retired or the event
 </div>
 
 {% if writeups.size == 0 %}
-<p class="text-muted">No write-ups published yet — check back soon.</p>
+<p class="text-muted">No write-ups published yet , check back soon.</p>
 {% endif %}

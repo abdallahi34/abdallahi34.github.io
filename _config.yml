@@ -19,7 +19,7 @@ timezone: Africa/Nouakchott
 
 title: Abdellahi Zerough # the main title
 
-tagline: Cybersecurity Engineer — SOC, Blue Team, Cloud Security # it will display as the subtitle
+tagline: Cybersecurity Engineer , SOC, Blue Team, Cloud Security # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Write-ups, projects, and notes on SOC, detection engineering, and cloud security by Abdellahi Ahmed Zerough.
@@ -85,10 +85,10 @@ pageviews:
 #
 # Available options:
 #
-#     light — Use the light color scheme
-#     dark — Use the dark color scheme
+#     light , Use the light color scheme
+#     dark , Use the dark color scheme
 #
-theme_mode: dark # [light | dark] — dark by default to match the CloudGuard / LinkedIn cover branding
+theme_mode: dark # [light | dark] , dark by default to match the CloudGuard / LinkedIn cover branding
 
 # The CDN endpoint for media resources.
 cdn:
@@ -104,7 +104,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  # Left disabled for now — see README for how to turn on giscus (recommended: uses GitHub
+  # Left disabled for now , see README for how to turn on giscus (recommended: uses GitHub
   # Discussions, no third-party account needed) once GitHub Discussions is enabled on this repo.
   provider: # [disqus | utterances | giscus]
   disqus:
@@ -112,7 +112,7 @@ comments:
   utterances:
     repo:
     issue_term:
-  # Giscus options › https://giscus.app — go there, connect this repo, and paste the values it gives you,
+  # Giscus options › https://giscus.app , go there, connect this repo, and paste the values it gives you,
   # then set provider: giscus above.
   giscus:
     repo: abdallahi34/abdallahi34.github.io

@@ -1,5 +1,5 @@
 ---
-title: "{MACHINE NAME} — Writeup"
+title: "{MACHINE NAME} , Writeup"
 author: "abdallahi"
 date: 2026-01-01 12:00:00 +0000
 machine: "{MACHINE NAME}"
@@ -14,7 +14,7 @@ layout: post
 render_with_liquid: false
 ---
 
-> This machine is retired — check the platform before publishing if you're duplicating this template for a new post.
+> This machine is retired , check the platform before publishing if you're duplicating this template for a new post.
 > {: .prompt-info }
 
 ## TL;DR
@@ -26,13 +26,13 @@ One or two sentences: what was exploited, and the overall approach.
 
 ## Enumeration
 1. `nmap -sC -sV -p- <ip>`
-2. Found service X on port Y — notes on what stood out.
+2. Found service X on port Y , notes on what stood out.
 
 ## Exploitation
 Step-by-step walkthrough with commands and short explanations of *why* each step is taken, not just what was typed.
 
 ## Privilege Escalation
-If applicable: what was found, why it worked, and — importantly — why easier/more obvious approaches did *not* work first. That contrast is usually the most useful part of a write-up.
+If applicable: what was found, why it worked, and , importantly , why easier/more obvious approaches did *not* work first. That contrast is usually the most useful part of a write-up.
 
 ## Root Cause
 Explain the underlying vulnerability class and why the fix (or lack of one) matters.

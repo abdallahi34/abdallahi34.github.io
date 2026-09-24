@@ -14,6 +14,6 @@ permalink: /projects/zkp-auth/
 
 **Stack:** Bettercap, Scapy, ZKP protocols
 
-**Team project — ENSIAS IoT Security module**
+**Team project , ENSIAS IoT Security module**
 
 [&larr; Back to Projects](/projects/)

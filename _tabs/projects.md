@@ -15,7 +15,7 @@ A few things I've built, mostly around detection engineering and cloud security.
     <a href="/projects/cloudguard/"><img src="/images/projects/cloudguard.png" class="card-img-top" alt="CloudGuard"></a>
     <div class="card-body">
       <h5 class="card-title"><a href="/projects/cloudguard/" class="text-decoration-none">CloudGuard</a></h5>
-      <p class="card-text text-muted">Cloud security detection pipeline — IaC scanning, posture monitoring, CloudTrail detection, remediation.</p>
+      <p class="card-text text-muted">Cloud security detection pipeline , IaC scanning, posture monitoring, CloudTrail detection, remediation.</p>
       <a href="/projects/cloudguard/">Read more</a> &middot;
       <a href="https://github.com/abdallahi34/cloudguard" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
     </div>
