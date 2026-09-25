@@ -5,7 +5,7 @@ categories: [Writeups, CTF]
 tags: [ctf, web, cache-poisoning, nginx, flask, url-normalization, request-smuggling, 0xmr]
 description: A web cache poisoning bug in the Clanker v2 challenge, where Nginx and Flask disagree on what a URL means and an admin session leaks into a public cache.
 toc: true
-media_subpath: /assets/img/misaligned-alignment
+media_subpath: /images/posts/misaligned-alignment
 ---
 
 ## The short version
