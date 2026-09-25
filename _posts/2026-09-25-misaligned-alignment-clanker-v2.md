@@ -7,7 +7,7 @@ tags: [ctf, web, cache-poisoning, nginx, flask, url-normalization, request-smugg
 render_with_liquid: false
 media_subpath: /images/posts/misaligned-alignment
 image:
-  path: 03-cache-hit.png
+  path: cover.png
   alt: The cached admin session returns X-Cache HIT with the flag inside accessToken
 excerpt: "Write-up for the Clanker v2 CTF challenge: a web cache poisoning bug where Nginx and Flask normalize the same URL differently, leaking the admin session into a public cache."
 toc: true
