@@ -1,11 +1,16 @@
 ---
 title: "Misaligned Alignment (Clanker v2): when one URL means two different things"
+author: "abdallahi"
 date: 2026-09-25 12:00:00 +0000
-categories: [Writeups, CTF]
+categories: [writeup, ctf]
 tags: [ctf, web, cache-poisoning, nginx, flask, url-normalization, request-smuggling, 0xmr]
-description: A web cache poisoning bug in the Clanker v2 challenge, where Nginx and Flask disagree on what a URL means and an admin session leaks into a public cache.
-toc: true
+render_with_liquid: false
 media_subpath: /images/posts/misaligned-alignment
+image:
+  path: 03-cache-hit.png
+  alt: The cached admin session returns X-Cache HIT with the flag inside accessToken
+excerpt: "Write-up for the Clanker v2 CTF challenge: a web cache poisoning bug where Nginx and Flask normalize the same URL differently, leaking the admin session into a public cache."
+toc: true
 ---
 
 ## The short version
@@ -34,7 +39,7 @@ The v2 page presents itself as "Clanker v2" with a login link, a prompt box, and
 
 I did not trust the UI, so I hit the root from the terminal instead of the browser. Curl gets a route list back rather than the HTML:
 
-![Recon against the root returns a JSON route list](/01-recon.png)
+![Recon against the root returns a JSON route list](01-recon.png)
 _The homepage is a chat UI in the browser, but from curl the root just hands you the route map._
 
 ```bash
@@ -47,12 +52,12 @@ The interesting routes are `/share/new`, `/share/<id>`, and `/api/auth/session`.
 
 I want to be honest about this because the challenge is built to bait you into it. Even after reading the "not prompt injection" hint, I still spent way too long trying to talk the flag out of the model. I asked it directly, I asked it to roleplay, I asked it to spell the flag one letter per line so it would not count as "saying" it. It just trolled me back:
 
-![Clanker refuses and spells FILAG instead of the real flag](/04-chat-refusal.png)
+![Clanker refuses and spells FILAG instead of the real flag](04-chat-refusal.png)
 _Asking it to spell the flag letter by letter. It proudly spelled out FILAG. Not the flag._
 
 That was the moment it clicked that the model does not have the flag in its normal response path at all. The flag lives in the **admin session**, not in anything the chatbot is willing or able to print. No amount of clever wording changes that.
 
-![Did anyone see the author here](/05-meme-author.png)
+![Did anyone see the author here](05-meme-author.png)
 
 Lesson learned. I closed the chat tab and went to read the plumbing.
 
@@ -143,7 +148,7 @@ curl -sS \
   "$BASE/share/new"
 ```
 
-![Creating the share returns an id and url](/02-create-share.png)
+![Creating the share returns an id and url](02-create-share.png)
 _The share is created with a unique cache key baked into the URL. The response is just an id, not the flag. It only means my link is now in the bot's review queue._
 
 The double slash trick (`/share/../`) is deliberate. It keeps the `/share/` prefix that Nginx caches, while giving Flask's normalizer a `/../` to climb out of `/share/` and land on the auth route.
@@ -171,7 +176,7 @@ curl -i --path-as-is \
   "$BASE/share/../api/auth/session?cache=$KEY"
 ```
 
-![The cached admin session comes back with X-Cache HIT and the flag](/03-cache-hit.png)
+![The cached admin session comes back with X-Cache HIT and the flag](03-cache-hit.png)
 _`X-Cache: HIT` on a `Cache-Control: private, no-store` response. Nginx stored the admin session under the public share key, and the flag is sitting in `accessToken`._
 
 `X-Cache: HIT` with an admin session body, requested anonymously. That is the win condition.
@@ -239,7 +244,7 @@ If a run returns `{}` or the header says `X-Cache: MISS`, just run it again. Eve
 
 The YouTube link in the flag is thematic, not a second secret. It points at research on HTTP/1.1 desync and cache poisoning, which is exactly the class of bug this challenge is built on.
 
-![Drake meme, after solving that one CTF](/06-meme-drake.png)
+![Drake meme, after solving that one CTF](06-meme-drake.png)
 
 ## Defensive lessons
 
