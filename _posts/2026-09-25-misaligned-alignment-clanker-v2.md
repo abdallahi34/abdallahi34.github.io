@@ -1,5 +1,5 @@
 ---
-title: "Misaligned Alignment (Clanker v2): when one URL means two different things"
+title: "Misaligned Alignment (Clanker v2)"
 author: "abdallahi"
 date: 2026-09-25 08:00:00 +0000
 categories: [writeup, ctf]
